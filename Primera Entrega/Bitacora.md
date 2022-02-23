@@ -52,5 +52,14 @@
 
 ## Reunion #7.
 ### Fecha: Miercoles 23 de febrero del 2022.
+### Ausentes a la reunión: Rossana Gonzales.
 ### Descripcion:
 - Quinta reunion del equipo con el docente.
+- Se le mostro la tabla de requerimientos ya lista, priorizada segun un formulario enviado a los posibles usuarios y con el modelo de priorizacion MosCow.
+- El docente mencionó que era necesario organizar la tabla segun su prioridadm asi como describir la funcionalidad de cada requerimiento, mejorar la redaccion de estos a una mas simple y asegurarnos que sean completos, precisos y no se contradigan unos a otros.
+- Despues de que se retire el docente, concretamos como fecha de reunion para trabajar en el proyecto cada lunes a las 5 de la tarde.
+
+## Reunion #8.
+### Fecha: Lunes 28 de febrero del 2022.
+### Ausentes a la reunión: .
+### Descripcion:
