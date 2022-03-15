@@ -1,4 +1,4 @@
-# **Requerimientos** 
+# **Requerimientos** ✏️📋
 
 ## **Resumen del Proyecto:** 
 
