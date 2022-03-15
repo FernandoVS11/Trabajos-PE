@@ -86,4 +86,3 @@ Siendo Must el más importante por del software, Should el siguiente en importan
 ### RNF05 - Diseño agradable
 #### Descripcion: La interfaz para votar será estética y amigable para el usuario. 
 
-
