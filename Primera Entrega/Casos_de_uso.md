@@ -37,3 +37,5 @@
 </div>
 
 
+## Diagrama de casos de uso
+<img src="https://github.com/FernandoVS11/Trabajos-PE/blob/7f4b5fd7ff5dfe69046bb5aaf57426b4e3f3f39a/Primera%20Entrega/Imagenes/Diagrama%20de%20casos%20de%20uso.png">
