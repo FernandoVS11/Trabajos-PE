@@ -52,5 +52,33 @@
 
 ## Reunion #7.
 ### Fecha: Miercoles 23 de febrero del 2022.
+### Ausentes a la reunión: Rossana Gonzales.
 ### Descripcion:
 - Quinta reunion del equipo con el docente.
+- Se le mostro la tabla de requerimientos ya lista, priorizada segun un formulario enviado a los posibles usuarios y con el modelo de priorizacion MosCow.
+- El docente mencionó que era necesario organizar la tabla segun su prioridadm asi como describir la funcionalidad de cada requerimiento, mejorar la redaccion de estos a una mas simple y asegurarnos que sean completos, precisos y no se contradigan unos a otros.
+- Despues de que se retire el docente, concretamos como fecha de reunion para trabajar en el proyecto cada lunes a las 5 de la tarde.
+
+## Reunion #8.
+### Fecha: Miercoles 02 de Marzo del 2022.
+### Ausentes a la reunión: nadie.
+### Descripcion:
+- Sexta reunion del equipo con el docente.
+- Durante esta reunion se mostró la tabla de requerimientos ya finalizada. Nos menciono que ya con los requerimientos listos podriamos empezar a hacer los refinamientos/casos de uso de aquellos con la prioridad "Must".
+- De igual manera se entrego la metrica, la cual menciono que estaba incompleta y nos instruyo con el detalle de que debe de mantener un registro de avance de cada integrante, tener los puntajes claros y concretar fechas de entregas para cada tarea segun los periodos de tiempo que tomemos.
+
+## Reunion #9.
+### Fecha: Viernes 04 de marzo del 2022.
+### Ausentes a la reunión: Rossana Gonzales.
+### Descripcion:
+- Durante esta reunion decidimos corrgir la metrica, en la cual añadimos puntaje a las tareas designadas por todos, establecimos un procedimiento a seguir en caso de que se incumpla con alguna tarea y establecimos fechas de entregas de las actividades, ya sea la entrega total o avances de la misma.
+- Correjimos los requerimientos y distribuimos la tarea de realiar los casos de uso entre todos los integrantes.
+
+## Reunion #10.
+### Fecha: Miercoles 09 de marzo del 2022.
+### Ausentes a la reunión: nadie.
+### Descripcion:
+- Septima reunion del equipo con el docente.
+- En esta reunion fueron presentados los casos de uso.
+- EL docente nos corrijio mucho el hecho de la redaccion y de distinguir bien cuando es un asunto del usuario y cuando es un asunto del sistema, de igual forma nos comento el hecho de que debemos de asegurar la calidad del trabajo entre todos, intentar tener un trabajo en equipo y no un espacio colaborativo donde cadaquienve su parte y no se preocupa por lo demas.
+- Esta fue la ultima reunion antes de la entrega.
