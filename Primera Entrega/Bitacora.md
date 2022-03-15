@@ -1,4 +1,4 @@
-# Bitacora 
+# Bitacora 📌📃
 
 ## Reunion #1 - Ideas para el proyecto
 ### Fecha:  Jueves 01 de febrero del 2022 (01/02/2022)
