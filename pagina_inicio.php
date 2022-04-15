@@ -1,3 +1,19 @@
+<?php
+
+    session_start();
+    if(!isset($_SESSION['usuario'])){
+        echo '
+            <script>
+                alert("Por favor debes iniciar sesión");
+                window.location = "index.php";
+            </script>
+        ';
+        session_destroy();
+        die();
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,6 +25,7 @@
         <div class="form">
             <h1 class="form__h1">¡Bienvenido Votante!</h1>
             <h2 class="form_h2"><a href="pagina_eleccion.php">Ir a la elección</a></h2>
+            <a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a> 
         </div>
     </body>
 </html>
