@@ -4,12 +4,13 @@
 
     $matricula=$_POST['Matrícula']; 
     $password=$_POST['Password'];
+    
+    $tabla= "INSERT INTO voters(matricula, contrasena) VALUES('$matricula', '$password')";
 
-    $tabla= "INSERT INTO usuarios(matricula) VALUES('$matricula') and INSERT INTO voters(password) VALUES('$password')";
-
-    $verificar_matricula= mysqli_query($conexion, "SELECT * FROM voters WHERE matricula='$matricula'and password = '$password'");
+    $verificar_matricula= mysqli_query($conexion, "SELECT * FROM voters WHERE matricula='$matricula'");
 
     if(mysqli_num_rows($verificar_matricula) > 0){
+        
         echo '
             <script>
                 alert("Esta matrícula ya está registrada, ingrese otra diferente");
@@ -18,7 +19,6 @@
         ';
         exit();
     }
-
     $ejecutar = mysqli_query($conexion, $tabla);    
 
     if($ejecutar){

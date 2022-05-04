@@ -1,12 +1,3 @@
-<?php
-
-    session_start();
-    if(isset($_SESSION['usuario'])){
-        header("location: pagina_inicio.php");
-    }
-
-?>
-
 
 <!DOCTYPE html>
 <html>
@@ -18,9 +9,9 @@
     <body>
         <div class="form">
             <h1 class="form__h1">The Blockchain Proyect</h1>
-            <h2 class="form__h2">¡Bienvenido Usuario!</h2>
-            <h3 class="form__h3">Porfavor ingrese su matrícula:</h3>
-            <form action="php/login_queary_admin.php" method="POST">
+            <h2 class="form__h2">¡Bienvenido Admin!</h2>
+            <h3 class="form__h3">Porfavor ingrese su matrícula y contraseña:</h3>
+            <form action="../php/login_queary_admin.php" method="POST">
                 <input type="text" placeholder="Matrícula" name="Matrícula" required="required">
                 <input placeholder="Ingrese contraseña" name="Password" type="password" required = "required">
                 <button>Enviar</button>
