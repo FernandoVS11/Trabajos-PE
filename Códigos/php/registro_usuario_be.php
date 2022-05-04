@@ -3,10 +3,11 @@
     include 'conexion_be.php';
 
     $matricula=$_POST['Matrícula']; 
+    $password=$_POST['Password'];
 
-    $tabla= "INSERT INTO usuarios(matricula) VALUES('$matricula')";
+    $tabla= "INSERT INTO usuarios(matricula) VALUES('$matricula') and INSERT INTO voters(password) VALUES('$password')";
 
-    $verificar_matricula= mysqli_query($conexion, "SELECT * FROM usuarios WHERE matricula='$matricula'");
+    $verificar_matricula= mysqli_query($conexion, "SELECT * FROM voters WHERE matricula='$matricula'and password = '$password'");
 
     if(mysqli_num_rows($verificar_matricula) > 0){
         echo '

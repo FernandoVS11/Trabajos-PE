@@ -13,7 +13,7 @@
     <head>
         <meta charset="UTF-8">
         <title>The Blockchain Proyect</title>
-        <link rel="stylesheet" type="text/css" href="Estilos/estilo.css">
+        <link rel="stylesheet" type="text/css" href="../Estilos/estilo.css">
     </head>
     <body>
         <div class="form">
@@ -21,8 +21,8 @@
             <h2 class="form__h2">¡Bienvenido Usuario!</h2>
             <h3 class="form__h3">Porfavor ingrese su matrícula:</h3>
             <form action="php/login_queary_admin.php" method="POST">
-                <input type="text" placeholder="Matrícula" name="Matrícula_login" required="required">
-                <input placeholder="Ingrese contraseña" name="password" type="password" required = "required">
+                <input type="text" placeholder="Matrícula" name="Matrícula" required="required">
+                <input placeholder="Ingrese contraseña" name="Password" type="password" required = "required">
                 <button>Enviar</button>
             </form>
             <h4>Si no es admin haga clic <a href="../index.php">aquí</a></h4>

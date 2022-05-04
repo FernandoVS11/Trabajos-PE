@@ -2,10 +2,10 @@
 	session_start();
         
         require_once 'php/conexion_be.php';
-        $matricula=$_POST['matricula'];
-		$password=$_POST['password'];
+        $matricula=$_POST['Matrícula'];
+		$password=$_POST['Password'];
 	
-		$validar_login_admin = mysqli_query($conexion, "SELECT * FROM usuarios WHERE matricula = '$matricula' and password = '$password'");
+		$validar_login_admin = mysqli_query($conexion, "SELECT * FROM usuarios WHERE Mátricula = '$matricula' and password = '$password'");
 			
         if(mysqli_num_rows($validar_login_admin) > 0){
             $_SESSION['usuarios']= $matricula;
