@@ -20,6 +20,6 @@ Paquete de Software libre, gestor de bases de datos MySQL. Fue utilizado para ge
 
 # Artefactos
 
-Bitácora
+## Bitácora
 
 Registro que llevaba a cabo el scrum master de las videollamadas y reuniones que se llevan a cabo.
