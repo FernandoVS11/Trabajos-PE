@@ -17,3 +17,9 @@ Software de edición de video. Fue utilizado para editar nuestro segundo video d
 
 ## Xampp
 Paquete de Software libre, gestor de bases de datos MySQL. Fue utilizado para gestionar la información y los datos de nuestra página web.
+
+# Artefactos
+
+Bitácora
+
+Registro que llevaba a cabo el scrum master de las videollamadas y reuniones que se llevan a cabo.
