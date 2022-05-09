@@ -27,4 +27,5 @@
             <a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a> 
         </div>
     </body>
+     
 </html>
