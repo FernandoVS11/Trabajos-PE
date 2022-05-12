@@ -25,6 +25,7 @@
         <div class="form">
             <h1 class="form__h1">Votación pendiente</h1>
             <a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a> 
+            <a class = "candidato 1">PrimerCandidato</a><br>
         </div>
     </body>
      
