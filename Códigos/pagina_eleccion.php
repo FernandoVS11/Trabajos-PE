@@ -24,8 +24,35 @@
     <body>
         <div class="form">
             <h1 class="form__h1">Votación pendiente</h1>
-            <a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a> 
+        </div>
+        <center>
+            <table border="2">
+                <thead>
+                    <th>Nombre</th>
+                    <th>Matrícula</th>
+                    <th>Imagen</th>
+                    <th>Voto</th>
+                </thead>
+                <?php
+                include('php/conexion_be.php');
+                $query="SELECT * FROM candidatos";
+                $resultado= $conexion->query($query);
+                while($row=$resultado->fetch_assoc()){
+            ?>
+            <tr>
+                <td><?php echo $row['nombre']; ?></td>
+                <td><?php echo $row['matricula']; ?></td>
+                <td><img height="70px" src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']); ?>"/></td>
+                <th><a href="#">Votar</a></th> 
+            </tr>
+            <?php
+                }
+            ?>
+            </table>
+        </center>
+
+        <div class="form2">
+            <a class= "form2_a" href="php/cerrar_sesion.php">Cerrar Sesión</a> 
         </div>
     </body>
-     
 </html>

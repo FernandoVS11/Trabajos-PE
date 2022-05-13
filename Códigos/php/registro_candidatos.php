@@ -20,9 +20,9 @@
         ';
         exit();
     }
-    $ejecutar = mysqli_query($conexion, $tabla);    
+    $resultado=$conexion->query($tabla);  
 
-    if($ejecutar){
+    if($resultado){
         echo '
         <script>
             alert("Usuario almacenado de manera exitosa");
@@ -38,5 +38,4 @@
         </script>
     ';
     }
-    mysqli_close($conexion);
 ?>
