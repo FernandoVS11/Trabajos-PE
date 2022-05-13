@@ -33,6 +33,7 @@
                         <th colspan=""><a href="index.php">Nuevo</a></th>
                     </tr>
                     <tr>
+                    <th>id</th>
                     <th>Nombre</th>
                     <th>Matrícula</th>
                     <th>Imagen</th>
@@ -40,17 +41,18 @@
                     </tr>
                 </thead>
                 <?php
-                include('php/conexion_be.php');
+                include('../php/conexion_be.php');
                 $query="SELECT * FROM candidatos";
                 $resultado= $conexion->query($query);
                 while($row=$resultado->fetch_assoc()){
             ?>
             <tr>
+                <td><?php echo $row['id']; ?></td>
                 <td><?php echo $row['nombre']; ?></td>
                 <td><?php echo $row['matricula']; ?></td>
                 <td><img height="70px" src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']); ?>"/></td>
-                <th><a href="php/modificar_eleccion.php?id=<?php echo $row['matricula']; ?>">Modificar</a></th>
-                <th><a href="php/eliminar_eleccion.php?id=<?php echo $row['matricula']; ?>">Eliminar</a></th>
+                <th><a href="../php/modificar_eleccion.php?id=<?php echo $row['id']; ?>">Modificar</a></th>
+                <th><a href="../php/eliminar_eleccion.php?id=<?php echo $row['id']; ?>">Eliminar</a></th>
             </tr>
             <?php
                 }

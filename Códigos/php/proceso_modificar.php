@@ -2,11 +2,12 @@
 
     include 'conexion_be.php';
 
-    $matricula=$_REQUEST['matricu;a'];
+    $id=$_REQUEST['id'];
+    $matricula=$_REQUEST['Matrícula'];
     $nombre=$_POST['Nombre']; 
     $imagen=addslashes(file_get_contents($_FILES['Imagen']['tmp_name']));
     
-    $tabla= "UPDATE candidatos SET nombre='$Nombre',imagen='$imagen' WHERE matricula='$matricula'";
+    $tabla= "UPDATE candidatos SET nombre='$Nombre',imagen='$imagen', matricula=$matricula WHERE id='$id'";
 
     $verificar_matricula= mysqli_query($conexion, "SELECT * FROM candidatos WHERE matricula='$matricula'");
 
