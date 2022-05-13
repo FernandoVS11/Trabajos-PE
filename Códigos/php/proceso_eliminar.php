@@ -1,12 +1,11 @@
+
 <?php
 
     include 'conexion_be.php';
 
-    $matricula=$_POST['Matrícula'];
-    $nombre=$_POST['Nombre']; 
-    $imagen=addslashes(file_get_contents($_FILES['Imagen']['tmp_name']));
+    $matricula=$_REQUEST['matricu;a'];
     
-    $tabla= "INSERT INTO candidatos(nombre, imagen, matricula) VALUES('$nombre', '$imagen','$matricula')";
+    $tabla= "DELETE FROM candidatos WHERE matricula='$matricula'";
 
     $verificar_matricula= mysqli_query($conexion, "SELECT * FROM candidatos WHERE matricula='$matricula'");
 

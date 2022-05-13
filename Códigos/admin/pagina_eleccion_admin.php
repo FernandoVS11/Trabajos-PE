@@ -28,10 +28,16 @@
         <center>
             <table border="2">
                 <thead>
+                    
+                    <tr>
+                        <th colspan=""><a href="index.php">Nuevo</a></th>
+                    </tr>
+                    <tr>
                     <th>Nombre</th>
                     <th>Matrícula</th>
                     <th>Imagen</th>
                     <th colspan="2">Operaciones</th>
+                    </tr>
                 </thead>
                 <?php
                 include('php/conexion_be.php');
@@ -42,9 +48,9 @@
             <tr>
                 <td><?php echo $row['nombre']; ?></td>
                 <td><?php echo $row['matricula']; ?></td>
-                <td><img height="70px" src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']); ?>"</td>
-                <th><a href="#">Modificar</a></th>
-                <th><a href="#">Eliminar</a></th>
+                <td><img height="70px" src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']); ?>"/></td>
+                <th><a href="php/modificar_eleccion.php?id=<?php echo $row['matricula']; ?>">Modificar</a></th>
+                <th><a href="php/eliminar_eleccion.php?id=<?php echo $row['matricula']; ?>">Eliminar</a></th>
             </tr>
             <?php
                 }
