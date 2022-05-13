@@ -1,5 +1,16 @@
 <?php
-
+    function verificar($verificar_matricula){
+        if(mysqli_num_rows($verificar_matricula) > 0){
+        
+            echo '
+                <script>
+                    alert("Esta matrícula ya está registrada, ingrese otra diferente");
+                    window.location="../admin/pagina_creacion_admin.php";
+                </script>
+            ';
+            exit();
+        }
+    }
     include 'conexion_be.php';
 
     $matricula=$_POST['Matrícula'];
@@ -9,21 +20,12 @@
     $tabla= "INSERT INTO candidatos(nombre, imagen, matricula) VALUES('$nombre', '$imagen','$matricula')";
 
     $verificar_matricula= mysqli_query($conexion, "SELECT * FROM candidatos WHERE matricula='$matricula'");
+    verificar($verificar_matricula);
 
-    if(mysqli_num_rows($verificar_matricula) > 0){
-        
-        echo '
-            <script>
-                alert("Esta matrícula ya está registrada, ingrese otra diferente");
-                window.location="../pagina_registro.php";
-            </script>
-        ';
-        exit();
-    }
     $resultado=$conexion->query($tabla);  
 
     if($resultado){
-        header("Location: pagina_eleccion_admin.php");
+        header("Location: ../admin/pagina_eleccion_admin.php");
         
     }
     else{

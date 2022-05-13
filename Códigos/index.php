@@ -1,6 +1,9 @@
 
 <!DOCTYPE html>
 <html>
+    <header>
+        <h1><img height="70px" src="https://user-images.githubusercontent.com/91033892/158305255-1f5c602c-6163-4e95-873c-bcfe35b6c151.png"/>BlockChain Proyect 2.0</h1>
+    </header>
     <head>
         <meta charset="UTF-8">
         <title>The Blockchain Proyect</title>
