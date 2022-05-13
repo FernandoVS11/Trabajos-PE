@@ -50,7 +50,6 @@
             ?>
             </table>
         </center>
-
         <div class="form2">
             <a class= "form2_a" href="php/cerrar_sesion.php">Cerrar Sesión</a> 
         </div>
