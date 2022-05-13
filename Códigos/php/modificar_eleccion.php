@@ -20,9 +20,9 @@
                 <input type="text" placeholder="Matrícula" name="Matrícula" required="required" value="<?php echo $row['matricula']; ?>"/><br/><br/>
                 <input type="file" placeholder="Inserte la imagen" name="Imagen" required = "required">
                 <button>Registrarse</button>
-            </form>
-            <a class= "form_a" href="cerrar_sesion.php">Cerrar Sesión</a> 
+            </form> 
         </center>
         </div>
     </body>
+    <footer><a class= "form_a" href="cerrar_sesion.php">Cerrar Sesión</a></footer>
 </html>

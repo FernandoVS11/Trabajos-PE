@@ -16,7 +16,7 @@
         echo '
             <script>
                 alert("Esta matrícula ya está registrada, ingrese otra diferente");
-                window.location="../pagina_registro.php";
+                window.location="modificar_eleccion.php";
             </script>
         ';
         exit();
@@ -24,7 +24,7 @@
     $resultado=$conexion->query($tabla);  
 
     if($resultado){
-        header("Location: pagina_eleccion_admin.php");
+        header("Location: ../admin/pagina_eleccion_admin.php");
         
     }
     else{

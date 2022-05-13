@@ -32,7 +32,7 @@
                 <button>Registrarse</button>
             </form>
             <h2 class="form__h1">Candidato 2</h2>
-            <a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a> 
         </div>
     </body>
+    <footer><a class= "form_a" href="cerrar_sesion.php">Cerrar Sesión</a></footer>
 </html>

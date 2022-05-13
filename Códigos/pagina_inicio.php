@@ -25,7 +25,7 @@
         <div class="form">
             <h1 class="form__h1">¡Bienvenido Votante!</h1>
             <h2 class="form_h2"><a href="pagina_eleccion.php">Ir a la elección</a></h2>
-            <a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a> 
         </div>
     </body>
+    <footer><a class= "form_a" href="cerrar_sesion.php">Cerrar Sesión</a></footer>
 </html>
