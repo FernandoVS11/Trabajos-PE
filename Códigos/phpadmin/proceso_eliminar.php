@@ -1,7 +1,7 @@
 
 <?php
 
-    include 'conexion_be.php';
+    include '../php/conexion_be.php';
 
     $matricula=$_REQUEST['matricu;a'];
     
@@ -14,7 +14,7 @@
         echo '
             <script>
                 alert("Esta matrícula ya está registrada, ingrese otra diferente");
-                window.location="../pagina_eliminar.php";
+                window.location="../admin/pagina_eliminar.php";
             </script>
         ';
         exit();
@@ -29,7 +29,7 @@
         echo'
         <script>
             alert("Usuario no almacenado, intente de nuevo");
-            window.location= "../index.php";
+            window.location= "../admin/pagina_creacion.php";
         </script>
     ';
     }

@@ -1,21 +1,12 @@
 <?php
-
-    session_start();
-    if(!isset($_SESSION['usuarios'])){
-        echo '
-            <script>
-                alert("Por favor debes iniciar sesión");
-                window.location = "login_admin.php";
-            </script>
-        ';
-        session_destroy();
-        die();
-    }
-
+    include('../phpadmin/comprobacion_admin.php')
 ?>
 
 <!DOCTYPE html>
 <html>
+    <header>
+        <h1><center><img height="70px" src="https://user-images.githubusercontent.com/91033892/158305255-1f5c602c-6163-4e95-873c-bcfe35b6c151.png"/>The Blockchain Proyect-Creación</center></h1>
+    </header>
     <head>
         <meta charset="UTF-8">
         <title>The Blockchain Proyect-Creación</title>
@@ -25,7 +16,7 @@
         <div class="form">
             <h1 class="form__h1">¡Crea tu primera elección!</h1>
             <h2 class="form__h1" >Candidato 1</h2>
-            <form action="../php/registro_candidatos.php" method="POST" enctype="multipart/form-data">
+            <form action="../phpadmin/registro_candidatos.php" method="POST" enctype="multipart/form-data">
                 <input type="text" placeholder="Nombre" name="Nombre" required="required"/><br/><br/>
                 <input type="text" placeholder="Matrícula" name="Matrícula" required="required"/><br/><br/>
                 <input type="file" placeholder="Inserte la imagen" name="Imagen" required = "required">
@@ -34,5 +25,5 @@
             <h2 class="form__h1">Candidato 2</h2>
         </div>
     </body>
-    <footer><a class= "form_a" href="cerrar_sesion.php">Cerrar Sesión</a></footer>
+    <footer><a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a></footer>
 </html>

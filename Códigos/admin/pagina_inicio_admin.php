@@ -1,21 +1,12 @@
 <?php
-
-    session_start();
-    if(!isset($_SESSION['usuarios'])){
-        echo '
-            <script>
-                alert("Por favor debes iniciar sesión");
-                window.location = "login_admin.php";
-            </script>
-        ';
-        session_destroy();
-        die();
-    }
-
+    include('../phpadmin/comprobacion_admin.php')
 ?>
 
 <!DOCTYPE html>
 <html>
+    <header>
+        <h1><center><img height="70px" src="https://user-images.githubusercontent.com/91033892/158305255-1f5c602c-6163-4e95-873c-bcfe35b6c151.png"/>The Blockchain Proyect-Inicio</center></h1>
+   </header>
     <head>
         <meta charset="UTF-8">
         <title>The Blockchain Proyect-Inicio</title>
@@ -26,7 +17,7 @@
             <h1 class="form__h1">¡Bienvenido ADMIN!</h1>
             <h2 class="form_h2"><a href="pagina_eleccion_admin.php">Ir a la elección</a></h2>
             <h2 class="form_h2"><a href="pagina_creacion_admin.php">Crear elección</a></h2>
-            <a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a> 
         </div>
     </body>
+    <footer><a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a></footer>
 </html>

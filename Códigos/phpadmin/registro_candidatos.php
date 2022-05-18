@@ -11,7 +11,7 @@
             exit();
         }
     }
-    include 'conexion_be.php';
+    include '../php/conexion_be.php';
 
     $matricula=$_POST['Matrícula'];
     $nombre=$_POST['Nombre']; 
@@ -32,7 +32,7 @@
         echo'
         <script>
             alert("Usuario no almacenado, intente de nuevo");
-            window.location= "../index.php";
+            window.location= "../admin/pagina_creacion.php";
         </script>
     ';
     }

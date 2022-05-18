@@ -1,21 +1,12 @@
 <?php
-
-    session_start();
-    if(!isset($_SESSION['voters'])){
-        echo '
-            <script>
-                alert("Por favor debes iniciar sesión");
-                window.location = "index.php";
-            </script>
-        ';
-        session_destroy();
-        die();
-    }
-
+    include('php/comprobacion_sesion.php');
 ?>
 
 <!DOCTYPE html>
 <html>
+    <header>
+        <h1><center><img height="70px" src="https://user-images.githubusercontent.com/91033892/158305255-1f5c602c-6163-4e95-873c-bcfe35b6c151.png"/>The BlockChain Proyect</center></h1>
+   </header>
     <head>
         <meta charset="UTF-8">
         <title>The Blockchain Proyect-Inicio</title>
@@ -27,5 +18,5 @@
             <h2 class="form_h2"><a href="pagina_eleccion.php">Ir a la elección</a></h2>
         </div>
     </body>
-    <footer><a class= "form_a" href="cerrar_sesion.php">Cerrar Sesión</a></footer>
+    <footer><a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a></footer>
 </html>
