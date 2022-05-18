@@ -16,9 +16,6 @@
 
 <!DOCTYPE html>
 <html>
-    <header>
-        <h1><img height="70px" src="https://user-images.githubusercontent.com/91033892/158305255-1f5c602c-6163-4e95-873c-bcfe35b6c151.png"/>BlockChain Proyect 2.0</h1>
-    </header>
     <head>
         <meta charset="UTF-8">
         <title>The Blockchain Proyect-Eleccion-ADMIN</title>
@@ -33,7 +30,7 @@
                 <thead>
                     
                     <tr>
-                        <th colspan=""><a href="index.php">Nuevo</a></th>
+                        <th colspan="6"><a href="index.php">Nuevo Candidato</a></th>
                     </tr>
                     <tr>
                     <th>id</th>
@@ -62,6 +59,8 @@
             ?>
             </table>
         </center>
+        <div class="form2">
+            <a class= "form2_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a> 
+        </div>
     </body>
-    <footer><a class= "form_a" href="cerrar_sesion.php">Cerrar Sesión</a></footer>
 </html>

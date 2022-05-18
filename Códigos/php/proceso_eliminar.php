@@ -3,26 +3,35 @@
 
     include 'conexion_be.php';
 
-    $matricula=$_REQUEST['matricu;a'];
-    
-    $tabla= "DELETE FROM candidatos WHERE matricula='$matricula'";
+    $id=$_REQUEST['id'];
+    $matricula=$_REQUEST['matricula'];
+    $tabla= "DELETE FROM candidatos WHERE id='$id'";
 
     $verificar_matricula= mysqli_query($conexion, "SELECT * FROM candidatos WHERE matricula='$matricula'");
 
-    if(mysqli_num_rows($verificar_matricula) > 0){
+    function verificarMatricula($verificar_matricula){
+        if(mysqli_num_rows($verificar_matricula) > 0){
         
-        echo '
-            <script>
-                alert("Esta matrícula ya está registrada, ingrese otra diferente");
-                window.location="../pagina_eliminar.php";
-            </script>
-        ';
-        exit();
-    }
-    $resultado=$conexion->query($tabla);  
+            echo '
+                <script>
+                    alert("Esta matrícula ya está registrada, ingrese otra diferente");
+                    window.location="../pagina_registro.php";
+                </script>
+            ';
+            exit();
+        }
 
+        $resultado=$conexion->query($tabla);
+
+        return $resultado;
+    }
+    
+
+    $resultado= verificarMatricula($verificar_matricula);
+    
+    
     if($resultado){
-        header("Location: ../admin/pagina_eleccion_admin.php");
+        header("Location: pagina_eleccion_admin.php");
         
     }
     else{
