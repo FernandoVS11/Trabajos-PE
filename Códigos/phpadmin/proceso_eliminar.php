@@ -3,13 +3,14 @@
 
     include '../php/conexion_be.php';
 
-    $matricula=$_REQUEST['matricu;a'];
-    
-    $tabla= "DELETE FROM candidatos WHERE matricula='$matricula'";
+    $id=$_REQUEST['id'];
+    $matricula=$_REQUEST['matricula'];
+    $tabla= "DELETE FROM candidatos WHERE id='$id'";
 
     $verificar_matricula= mysqli_query($conexion, "SELECT * FROM candidatos WHERE matricula='$matricula'");
 
-    if(mysqli_num_rows($verificar_matricula) > 0){
+    function verificarMatricula($verificar_matricula){
+        if(mysqli_num_rows($verificar_matricula) > 0){
         
         echo '
             <script>
@@ -21,8 +22,17 @@
     }
     $resultado=$conexion->query($tabla);  
 
+        $resultado=$conexion->query($tabla);
+
+        return $resultado;
+    }
+    
+
+    $resultado= verificarMatricula($verificar_matricula);
+    
+    
     if($resultado){
-        header("Location: ../admin/pagina_eleccion_admin.php");
+        header("Location: pagina_eleccion_admin.php");
         
     }
     else{
