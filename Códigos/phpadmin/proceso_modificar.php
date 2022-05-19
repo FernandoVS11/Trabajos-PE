@@ -3,11 +3,11 @@
     include '../php/conexion_be.php';
 
     $id=$_REQUEST['id'];
-    $matricula=$_REQUEST['Matrícula'];
+    $matricula=$_POST['Matrícula'];
     $nombre=$_POST['Nombre']; 
     $imagen=addslashes(file_get_contents($_FILES['Imagen']['tmp_name']));
     
-    $tabla= "UPDATE candidatos SET nombre='$Nombre',imagen='$imagen', matricula=$matricula WHERE id='$id'";
+    $tabla= "UPDATE candidatos SET nombre='$nombre',imagen='$imagen', matricula='$matricula' WHERE id='$id'";
 
     $verificar_matricula= mysqli_query($conexion, "SELECT * FROM candidatos WHERE matricula='$matricula'");
 
@@ -24,14 +24,18 @@
     $resultado=$conexion->query($tabla);  
 
     if($resultado){
-        header("Location: ../admin/pagina_eleccion_admin.php");
-        
+        echo'
+        <script>
+            alert("Usuario modificado de manera correcta");
+            window.location= "../admin/pagina_eleccion_admin.php";
+        </script>
+    ';
     }
     else{
         echo'
         <script>
-            alert("Usuario no almacenado, intente de nuevo");
-            window.location= "../admin/pagina_creacion.php";
+            alert("Usuario no modificado, intente de nuevo");
+            window.location= "../admin/pagina_eleccion_admin.php";
         </script>
     ';
     }

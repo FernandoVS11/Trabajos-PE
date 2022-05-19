@@ -17,13 +17,13 @@
         ?>
         <div class="form">
         <center>
-            <h1 class="form__h1">Elimina la eleccion</h1>
+            <h1 class="form__h1">¿Seguro que quiere eliminar a este candidato?</h1>
             <h2 class="form__h1" >Candidato <?php echo $row['id'];?></h2>
-            <form action="../phpadmin/proceso_modificar.php?id=<?php echo $row['id']; ?>" method="POST" enctype="multipart/form-data">
+            <form action="../phpadmin/proceso_eliminar.php?id=<?php echo $row['id']; ?>" method="POST" enctype="multipart/form-data">
                 <input type="text" placeholder="Nombre" name="Nombre" required="required" value="<?php echo $row['nombre']; ?>"/><br/><br/>
                 <img height="100px" src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']); ?>"/><br/><br/>
                 <input type="text" placeholder="Matrícula" name="Matrícula" required="required" value="<?php echo $row['matricula']; ?>"/><br/><br/>
-                <button href="../phpadmin/proceso_eliminar.php">Eliminar</button>
+                <button><a href="../phpadmin/proceso_eliminar.php?id=<?php echo $row['id']; ?>">Eliminar</a></button>
             </form> 
         </center>
         </div>

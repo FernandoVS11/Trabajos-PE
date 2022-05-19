@@ -23,8 +23,8 @@
                 <input type="text" placeholder="Nombre" name="Nombre" required="required" value="<?php echo $row['nombre']; ?>"/><br/><br/>
                 <img height="100px" src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']); ?>"/><br/><br/>
                 <input type="text" placeholder="Matrícula" name="Matrícula" required="required" value="<?php echo $row['matricula']; ?>"/><br/><br/>
-                <input type="file" placeholder="Inserte la imagen" name="Imagen" required = "required">
-                <button>Registrarse</button>
+                <input type="file" placeholder="Inserte la imagen" name="Imagen">
+                <button>Modificar</button>
             </form> 
         </center>
         </div>
