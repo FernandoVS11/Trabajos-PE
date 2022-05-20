@@ -127,6 +127,9 @@ DELETE FROM alumnos WHERE id='';
 
 # Videos para seguir con el tema
 En este video se puede ver más comandos y el uso de MySQL Workbench, la cual es la interfaz gráfica más popular para MySQL.
+
 https://www.youtube.com/watch?v=uUdKAYl-F7g
+
 En este lista de reproducción se ven aún más comandos pero usados desde el cmd, además de recapitular los términos vistos en esta sesión.
+
 https://youtube.com/playlist?list=PLg9145ptuAihPxpM3YfQJYwPHv-Vnh_bV
