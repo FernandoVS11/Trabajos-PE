@@ -48,14 +48,14 @@ creara una pestaña con un archivo donde podremos empezar a trabajar.
 
 ### Leer una tabla (Read)
 
-Escribiremos "use lista_alumnos; ", esto nos permitirá acceder a la base de datos "lista_alumnos"
+Escribiremos "use login_db; ", esto nos permitirá acceder a la base de datos "lista_alumnos"
 
-Posterior a eso en la siguiente linea escribiremos "SELECT * FROM alumnos;", en la que básicamente vamos a visualizar la tabla alumnos.
+Posterior a eso en la siguiente linea escribiremos "SELECT * FROM lista_alumnos;", en la que básicamente vamos a visualizar la tabla alumnos.
 
 El resultado debería ser algo asi:
 ```MySQL
- use lista_alumnos;
- SELECT * FROM alumnos;
+ use login_db;
+ SELECT * FROM lista_alumnos;
 ```
 
 Una vez puesto esto damos click derecho y "Run MySQL query"
@@ -67,8 +67,8 @@ Creamos un nuevo query como la vez pasada, haciendo click derecho y click en "Ne
 Seguiremos en la misma base de datos y vamos a trabajar en la misma tabla. Como se pudo ver la tabla es una lista del salon, sin embargo, la lista del salon esta mal, entonces tendremos que borrar la fila donde esta nuestro nombre, para eso escribimos:
 
 ```MySQL
-use lista_alumnos;
-DELETE FROM alumnos WHERE id='';
+use login_db;
+DELETE FROM lista_alumnos WHERE id='';
 ```
 En la parte que dice " id='' ", entre las comillas simples pondremos el id de la fila donde se encuentra nuestro nombre mal escrito. Una vez ponemos el id ejecutamos el codigo como la vez pasada, haciendo click derecho y luego click en "Run MySQL query".
 
@@ -79,12 +79,12 @@ Creamos un nuevo query como la vez pasada, haciendo click derecho y click en "Ne
 En esta ocasion ingresaremos nuestro nombre, en esta ocasion bien escrito, entonces en este nuevo query escribimos:
 
 ```MySQL
-use lista_alumnos;
-INSERT INTO alumnos('nombre') VALUES ('Nombre completo');
+use login_db;
+INSERT INTO lista_alumnos('nombre') VALUES ('Nombre completo');
 ```
 **Aqui reemplazaremos "Nombre completo" por nuestro nombre**.
 
-Aqui seguimos trabajando en la base de datos lista_alumnos, donde insertamos una fila en la tabla 'alumnos' con nuestro nombre. Cuando ya hayamos puesto nuestro nombre completo ejecutamos el codigo como antes, dando click derecho y luego click en "Run MySQL query"
+Aqui seguimos trabajando en la base de datos login_db, donde insertamos una fila en la tabla 'lista_alumnos' con nuestro nombre. Cuando ya hayamos puesto nuestro nombre completo ejecutamos el codigo como antes, dando click derecho y luego click en "Run MySQL query"
 
 ### Actualizar una fila (Update)
 
@@ -93,17 +93,17 @@ Creamos un nuevo query como la vez pasada, haciendo click derecho y click en "Ne
 Para este ultimo query lo que realizaremos es actualizar la fila que acabamos de insertar, si nos damos cuenta en la tabla hay 3 columnas:
 - El id
 - El nombre del alumno
-- El numero de lista del alumno
+- El número de lista del alumno
 
 Sin embargo, cuando creamos la fila no insertamos nombre de lista, entonces tendremos que actualizar este valor, para ello tendremos que poner lo siguiente:
 
 ```MySQL
 use lista_alumnos;
-UPDATE alumnos SET num_de_lista='Tu numero de lista' WHERE id='Tu id';
+UPDATE lista_alumnos SET nlista='Tu numero de lista' WHERE id='Tu id';
 ```
-**En donde dice 'tu numero de lista' lo cambiamos por nuestro numero de lista y en donde dice 'tu id' lo cambiamos por el id de la fila que creamos anteriormente**
+**En donde dice 'tu numero de lista' lo cambiamos por nuestro número de lista y en donde dice 'Tu id' lo cambiamos por el id de la fila que creamos anteriormente**
 
-Aqui estamos trabajando en la base de datos lista_alumnos, especificamente en la tabla alumnos, donde cambiamos el valor de la columna "numero_de_lista" a nuestro numero de lista usando como referencia el id de la misma fila. Cuando ya hayamos puesto el valor del id de nuestra fila y nuestro numero de lista, damos click derecho y hacemos click en "Run MySQL query".
+Aqui estamos trabajando en la base de datos login_db, especificamente en la tabla alumnos, donde cambiamos el valor de la columna "nlista" a nuestro número de lista usando como referencia el id de la misma fila. Cuando ya hayamos puesto el valor del id de nuestra fila y nuestro numero de lista, damos click derecho y hacemos click en "Run MySQL query".
 
 
 # Recopilacion Codigos CRUD
@@ -111,29 +111,29 @@ Aqui estamos trabajando en la base de datos lista_alumnos, especificamente en la
 ## Crear una fila (Create)
 
 ```MySQL
-use lista_alumnos;
-INSERT INTO alumnos('nombre') VALUES ('Nombre completo');
+use login_db;
+INSERT INTO lista_alumnos('nombre') VALUES ('(el nombre que quieras poner)');
 ```
 
 ## Visualizar la tabla (Read)
 
 ```MySQL
- use lista_alumnos;
- SELECT * FROM alumnos;
+ use login_db;
+ SELECT * FROM lista_alumnos;
 ```
 
 ## Actualizar una tabla (Update)
 
 ```MySQL
-use lista_alumnos;
-UPDATE alumnos SET nlista='Tu numero de lista' WHERE id='Tu id';
+use login_db;
+UPDATE lista_alumnos SET nlista='(el número que quieras poner)' WHERE id='(el id que hay en la fila que quieres modificar)';
 ```
 
 ## Eliminar una fila (Delete)
 
 ```MySQL
-use lista_alumnos;
-DELETE FROM alumnos WHERE id='';
+use login_db;
+DELETE FROM lista_alumnos WHERE id='(el id de la fila que quieras eliminar)';
 ```
 
 # Videos para seguir con el tema
