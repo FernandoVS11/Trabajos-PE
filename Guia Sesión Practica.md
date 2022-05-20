@@ -15,10 +15,25 @@ Antes de empezar tenemos que conectarnos a un servidor, para ello tendremos que 
  <img width="265" alt="Screen Shot 2022-05-18 at 14 39 49" src="https://user-images.githubusercontent.com/89323622/169142452-9e1e931e-c5ca-4bf8-a8c4-f832b882a806.png">
 
 Y a partir de aqui tendremos que ingresar los datos que se le han provisto por medio del chat de Teams.
-
+## Crear base de datos
+Podemos crear una base de datos con el siguiente comando:
+```MySQL
+create database mi_base_de_datos;
+```
+## Eliminar base de datos
+Podemos eliminar una base de datos con el siguiente comando:
+```MySQL
+drop database mi_base_de_datos;
+```
+## Seleccionar base de datos
+Podemos seleccionar una base de datos con el siguiente comando:
+```MySQL
+use mi_base_de_datos;
+```
 ## CRUD
 
-Una vez conectados, crearemos nuestra primera petición (o query), para eso simplemente tendremos que hacer click derecho sobre MySQL y dar click  en "New Query", nos creara una pestaña con un archivo donde podremos empezar a trabajar.
+Una vez conectados, crearemos nuestra primera petición (o query), para eso simplemente tendremos que hacer click derecho sobre MySQL y dar click  en "New Query", nos 
+creara una pestaña con un archivo donde podremos empezar a trabajar.
 
 ### Leer una tabla (Read)
 
@@ -109,3 +124,9 @@ UPDATE alumnos SET num_de_lista='Tu numero de lista' WHERE id='Tu id';
 use lista_alumnos;
 DELETE FROM alumnos WHERE id='';
 ```
+
+# Videos para seguir con el tema
+En este video se puede ver más comandos y el uso de MySQL Workbench, la cual es la interfaz gráfica más popular para MySQL.
+https://www.youtube.com/watch?v=uUdKAYl-F7g
+En este lista de reproducción se ven aún más comandos pero usados desde el cmd, además de recapitular los términos vistos en esta sesión.
+https://youtube.com/playlist?list=PLg9145ptuAihPxpM3YfQJYwPHv-Vnh_bV
