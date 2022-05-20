@@ -30,6 +30,17 @@ Podemos seleccionar una base de datos con el siguiente comando:
 ```MySQL
 use mi_base_de_datos;
 ```
+## Crear tabla
+Podemos crear una tabla en la base de datos que queramos con el siguiente comando:
+```MySQL
+use mi_base_de_datos;
+CREATE TABLE lista_alumnos(
+    'id' BIGINT AUTO_INCREMENT,
+    'nombre' VARCHAR(150),
+    'nlista' int,
+    PRIMARY KEY('id')
+);
+```
 ## CRUD
 
 Una vez conectados, crearemos nuestra primera petición (o query), para eso simplemente tendremos que hacer click derecho sobre MySQL y dar click  en "New Query", nos 
@@ -115,7 +126,7 @@ INSERT INTO alumnos('nombre') VALUES ('Nombre completo');
 
 ```MySQL
 use lista_alumnos;
-UPDATE alumnos SET num_de_lista='Tu numero de lista' WHERE id='Tu id';
+UPDATE alumnos SET nlista='Tu numero de lista' WHERE id='Tu id';
 ```
 
 ## Eliminar una fila (Delete)
