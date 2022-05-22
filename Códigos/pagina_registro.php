@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <header>
+        <h1><center><img height="70px" src="https://user-images.githubusercontent.com/91033892/158305255-1f5c602c-6163-4e95-873c-bcfe35b6c151.png"/>The BlockChain Proyect</center></h1>
+   </header>
     <head>
         <meta charset="UTF-8">
         <title>The Blockchain Proyect</title>
@@ -7,7 +10,6 @@
     </head>
     <body>
         <div class="form">
-            <h1 class="form__h1">The Blockchain Proyect</h1>
             <h2 class="form__h2">¡Bienvenido Nuevo Usuario!</h2>
             <h3 class="form__h3">Porfavor ingrese su matrícula y contraseña para registrarse:</h3>
             <form action="php/registro_usuario_be.php" method="POST">

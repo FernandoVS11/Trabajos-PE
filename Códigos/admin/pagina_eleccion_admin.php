@@ -1,21 +1,12 @@
 <?php
-
-    session_start();
-    if(!isset($_SESSION['usuarios'])){
-        echo '
-            <script>
-                alert("Por favor debes iniciar sesión");
-                window.location = "login_admin.php";
-            </script>
-        ';
-        session_destroy();
-        die();
-    }
-
+    include('../phpadmin/comprobacion_admin.php')
 ?>
 
 <!DOCTYPE html>
 <html>
+    <header>
+        <h1><center><img height="70px" src="https://user-images.githubusercontent.com/91033892/158305255-1f5c602c-6163-4e95-873c-bcfe35b6c151.png"/>The Blockchain Proyect-Eleccion-ADMIN</center></h1>
+    </header>
     <head>
         <meta charset="UTF-8">
         <title>The Blockchain Proyect-Eleccion-ADMIN</title>
@@ -24,7 +15,10 @@
     <body>
         <div class="form">
             <h1 class="form__h1">Votación pendiente ADMIN</h1>
-            <a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a> 
         </div>
+        <?php
+        include('../phpadmin/asignacion_admin.php');
+        ?>
     </body>
+    <footer><a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a></footer>
 </html>

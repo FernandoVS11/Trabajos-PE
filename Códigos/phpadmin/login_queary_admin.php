@@ -1,7 +1,7 @@
 <?php
 	session_start();
         
-        include 'conexion_be.php';
+        include '../php/conexion_be.php';
         $matricula=$_POST['Matrícula'];
 		$password=$_POST['Password'];
 	

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-	    include 'php/conexion_be.php';	
+	    include('conexion_be.php');	
         $matricula=$_POST['Matrícula'];
 		$password=$_POST['Password'];
 	
@@ -9,14 +9,14 @@ session_start();
 		
         if(mysqli_num_rows($validar_login_votante) > 0){
             $_SESSION['voters']= $matricula;
-            header("location: pagina_inicio.php");
+            header("location: ../pagina_inicio.php");
             exit;
         }
         else{
             echo'
                 <script>
                     alert("Usuario no existe, por favor verifique la matrícula introducida");
-                    window.location="index.php";
+                    window.location="../index.php";
                 </script>
             ';
             exit;
