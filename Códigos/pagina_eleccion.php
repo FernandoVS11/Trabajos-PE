@@ -17,6 +17,7 @@
             <h1 class="form__h1">Elija a su candidato</h1>
             <a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a> 
             <button id = "candidatoUno">Primer Candidato</button>
+            <p id = "votosUno"></p>
             <button id = "candidatoDos">Segundo Candidato</button><br>
 
         </div>
@@ -32,6 +33,20 @@
 
                 var adress = "0x0f51a44e7D175d9d0D712e73DE6a64aE5CFa8864";
                 var abi = [
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "verVotosDos",
+		"outputs": [
+			{
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
 	{
 		"constant": false,
 		"inputs": [],
@@ -51,26 +66,6 @@
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "verVotosDos",
-		"outputs": [
-			{
-				"name": "",
-				"type": "int256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"constant": true,
 		"inputs": [],
 		"name": "verVotosUno",
@@ -83,14 +78,20 @@
 		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
 	}
-];
+] ;
 
                 contract = new web3.eth.Contract(abi, adress);
 
                 contract.methods.verVotosUno().call().then(function(voto){
 
-                    $('#CandidatoUno').html(voto);
+                    $('#votosUno').html(voto);
 
                 })
             })
