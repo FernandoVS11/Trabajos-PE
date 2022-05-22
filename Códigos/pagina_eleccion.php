@@ -14,7 +14,6 @@
     </head>
     <body>
         <div class="form">
-<<<<<<< HEAD
             <h1 class="form__h1">Elija a su candidato</h1>
             <a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a> 
             <button id = "candidatoUno">Primer Candidato</button><br>
@@ -47,11 +46,6 @@
 
         </script>
 
-=======
-            <h1 class="form__h1">Votación pendiente</h1>
-        </div>
-        <?php include('php/asignacion_tabla.php');?>
->>>>>>> da498674ca72534d7c5326d39c9d470c1e46c09d
     </body>
     <footer><a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a></footer>
 </html>
