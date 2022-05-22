@@ -30,13 +30,65 @@
 
                 web3 = new Web3(web3.currentProvider);
 
-                var adress = "";
-                var abi = "";
-
+                var adress = "0x0f51a44e7D175d9d0D712e73DE6a64aE5CFa8864";
+                var abi = [
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "efectuarVotoDos",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "efectuarVotoUno",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "verVotosDos",
+		"outputs": [
+			{
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "verVotosUno",
+		"outputs": [
+			{
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+];
 
                 contract = new web3.eth.Contract(abi, adress);
 
-                contract.methods.verVotos().call().then(function(voto){
+                contract.methods.verVotosUno().call().then(function(voto){
 
                     $('#CandidatoUno').html(voto);
 
