@@ -35,10 +35,10 @@ Podemos crear una tabla en la base de datos que queramos con el siguiente comand
 ```MySQL
 use mi_base_de_datos;
 CREATE TABLE lista_alumnos(
-    'id' BIGINT AUTO_INCREMENT,
-    'nombre' VARCHAR(150),
-    'nlista' int,
-    PRIMARY KEY('id')
+    id BIGINT AUTO_INCREMENT,
+    nombre VARCHAR(150),
+    nlista int,
+    PRIMARY KEY(id)
 );
 ```
 ## CRUD
