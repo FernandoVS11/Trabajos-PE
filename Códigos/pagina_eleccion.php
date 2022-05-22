@@ -16,7 +16,7 @@
         <div class="form">
             <h1 class="form__h1">Elija a su candidato</h1>
             <a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a> 
-            <button id = "candidatoUno">Primer Candidato</button><br>
+            <button id = "candidatoUno">Primer Candidato</button>
             <button id = "candidatoDos">Segundo Candidato</button><br>
 
         </div>
