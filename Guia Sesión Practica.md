@@ -15,6 +15,25 @@ Antes de empezar tenemos que conectarnos a un servidor, para ello tendremos que 
  <img width="265" alt="Screen Shot 2022-05-18 at 14 39 49" src="https://user-images.githubusercontent.com/89323622/169142452-9e1e931e-c5ca-4bf8-a8c4-f832b882a806.png">
 
 Y a partir de aqui tendremos que ingresar los datos que se le han provisto por medio del chat de Teams.
+## Xampp
+Una vez seguidas las instrucciones del teams podremos usar xampp para acceder a phpmyadmin, para esto tendrás que activar estos dos: 
+![image](https://user-images.githubusercontent.com/97609743/169921654-4102a53b-88d0-4770-8d3e-b4ef616febbc.png)
+
+## PhpMyAdmin
+Con lo anterior debería ser suficiente para conecctarse con su base de datos local y crear lo que pide el ejercicio, pero algo que igual permite el xampp es acceder a phpmyadmin donde podrán de igual manera usar sql y realizar los comandos que les vamos a enseñar en clase.
+
+Para acceder a este deben darle click a admin en la linéa donde está mysql:
+![image](https://user-images.githubusercontent.com/97609743/169921765-64c4a600-e6c6-43bb-949f-e7d4866b03de.png)
+
+Para usar el lenguaje sql debes acceder a esta pestaña:
+![image](https://user-images.githubusercontent.com/97609743/169922261-5682a4f6-c96d-4393-bccb-908455bddff6.png)
+
+En phpmyadmin puedes de manera visual crear tu base de datos y las tablas que este lo incluyen, incluso después de realizarlo te muestra como este sería en SQL, es como cuando en Pseint usabas los diagramas de flujo y luego veías el código.
+
+Para ver más en detalle el uso de phpmyadmin te recomendamos ver este video:
+https://www.youtube.com/watch?v=7RmTCGQ-dvg
+
+
 ## Crear base de datos
 Podemos crear una base de datos con el siguiente comando:
 ```MySQL
