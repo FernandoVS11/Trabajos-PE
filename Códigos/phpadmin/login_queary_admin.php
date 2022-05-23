@@ -5,10 +5,10 @@
         $matricula=$_POST['Matrícula'];
 		$password=$_POST['Password'];
 	
-		$validar_login_admin = mysqli_query($conexion, "SELECT * FROM usuarios WHERE matricula = '$matricula' and contrasena = '$password'");
+		$validar_login_admin = mysqli_query($conexion, "SELECT * FROM admin WHERE matricula = '$matricula' and contrasena = '$password'");
 			
         if(mysqli_num_rows($validar_login_admin) > 0){
-            $_SESSION['usuarios']= $matricula;
+            $_SESSION['admin']= $matricula;
             header("location: ../admin/pagina_inicio_admin.php");
             exit;
         }
