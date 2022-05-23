@@ -100,5 +100,6 @@
         </script>
 
     </body>
+	<a href="pagina_inicio.php">Regresa a página inicio</a><br> 
     <footer><a class= "form_a" href="php/cerrar_sesion.php">Cerrar Sesión</a></footer>
 </html>
