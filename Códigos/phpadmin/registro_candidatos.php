@@ -12,15 +12,24 @@
         }
     }
     include('../php/contador.php');
-    if($output<=2){
+    if($output>=2){
         echo'
         <script>
-             alert("Solo pueden almacenarse 2 candidátos por el momento");
+             alert("Solo pueden almacenarse 2 candidatos por el momento");
             window.location= "../admin/pagina_eleccion_admin.php";
         </script>
         ';       
     }
     else{
+        $query= "SELECT COUNT(*) AS contador2 FROM finalizacion_voto";
+        $query_result= mysqli_query($conexion,$query);
+        while($row=mysqli_fetch_assoc($query_result)){
+            $output=$row['contador2'];
+        }
+        if($output>0){
+            $tabla= "DELETE FROM finalizacion_voto";  
+            $resultado= $conexion->query($tabla);
+        }
         $matricula=$_POST['Matrícula'];
         $nombre=$_POST['Nombre']; 
         $imagen=addslashes(file_get_contents($_FILES['Imagen']['tmp_name']));

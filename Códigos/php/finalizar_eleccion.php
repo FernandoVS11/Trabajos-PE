@@ -1,6 +1,7 @@
 <?php
-    include 'conexion_be.php';
+    include 'contador.php';
 
+    
     $tabla= "INSERT INTO finalizacion_voto(codigo) VALUES('12345')";
     
     $ejecutar = mysqli_query($conexion, $tabla);

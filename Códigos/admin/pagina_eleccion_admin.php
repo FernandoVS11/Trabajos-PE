@@ -18,7 +18,7 @@
         </div>
         <?php
         include('../phpadmin/asignacion_admin.php');
-        ?>
+        ?>      
         <a href="../php/finalizar_eleccion.php"><center>Finalizar eleccion</center> </a> 
     </body>
     <footer>

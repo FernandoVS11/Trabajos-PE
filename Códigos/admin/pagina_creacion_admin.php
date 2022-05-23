@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="form">
-            <h1 class="form__h1">¡Crea tu primera elección!</h1>
+            <h1 class="form__h1">¡Crea una elección!</h1>
             <h2 class="form__h1" >Candidato a registrar</h2>
             <form action="../phpadmin/registro_candidatos.php" method="POST" enctype="multipart/form-data">
                 <input type="text" placeholder="Nombre" name="Nombre" required="required"/><br/><br/>
@@ -22,7 +22,12 @@
                 <input type="file" placeholder="Inserte la imagen" name="Imagen" required = "required">
                 <button>Registrarse</button>
             </form>
-            
+            <p>Los candidatos actuales son:
+            <?php
+                include('../php/contador.php');
+                echo $output
+            ?>
+            </p>
         </div>
     </body>
     <footer>

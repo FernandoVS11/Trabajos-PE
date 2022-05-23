@@ -17,6 +17,12 @@
             <h1 class="form__h1">Elija a su candidato</h1>
 			<?php 
 			include('php/asignacion_tabla.php');
+			$verificar_codigo= mysqli_query($conexion, "SELECT * FROM finalizacion_voto WHERE codigo='12345'");
+
+			if(mysqli_num_rows($verificar_codigo) > 0){
+
+				header("Location: pagina_eleccion_finalizada.php");
+			}
 			?>	
             <button id = "candidatoUno">Primer Candidato</button>
             <p id = "votosUno"></p>
