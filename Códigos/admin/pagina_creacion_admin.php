@@ -15,15 +15,18 @@
     <body>
         <div class="form">
             <h1 class="form__h1">¡Crea tu primera elección!</h1>
-            <h2 class="form__h1" >Candidato 1</h2>
+            <h2 class="form__h1" >Candidato a registrar</h2>
             <form action="../phpadmin/registro_candidatos.php" method="POST" enctype="multipart/form-data">
                 <input type="text" placeholder="Nombre" name="Nombre" required="required"/><br/><br/>
                 <input type="text" placeholder="Matrícula" name="Matrícula" required="required"/><br/><br/>
                 <input type="file" placeholder="Inserte la imagen" name="Imagen" required = "required">
                 <button>Registrarse</button>
             </form>
-            <h2 class="form__h1">Candidato 2</h2>
+            
         </div>
     </body>
-    <footer><a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a></footer>
+    <footer>
+        <a href="pagina_inicio_admin.php">Regresa a página inicio admin</a><br>   
+        <a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a>
+    </footer>
 </html>

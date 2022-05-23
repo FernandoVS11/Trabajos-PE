@@ -14,11 +14,14 @@
                 while($row=$resultado->fetch_assoc()){
             ?>
             <tr>
+                <td colspan="5"><center>Candidato <?php echo $row['id'];?></center></td>
+            </tr>
+            <tr>
                 <td><?php echo $row['id']; ?></td>
                 <td><?php echo $row['nombre']; ?></td>
                 <td><?php echo $row['matricula']; ?></td>
                 <td><img height="70px" src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']); ?>"/></td>
-                <th><a href="#">Votar</a></th> 
+                <th><a href="php/confirmacion_voto.php?id=<?php echo $row['id']; ?>">Votar</a></th> 
             </tr>
             <?php
                 }

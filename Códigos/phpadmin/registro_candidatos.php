@@ -11,29 +11,39 @@
             exit();
         }
     }
-    include '../php/conexion_be.php';
-
-    $matricula=$_POST['Matrícula'];
-    $nombre=$_POST['Nombre']; 
-    $imagen=addslashes(file_get_contents($_FILES['Imagen']['tmp_name']));
-    
-    $tabla= "INSERT INTO candidatos(nombre, imagen, matricula) VALUES('$nombre', '$imagen','$matricula')";
-
-    $verificar_matricula= mysqli_query($conexion, "SELECT * FROM candidatos WHERE matricula='$matricula'");
-    verificar($verificar_matricula);
-
-    $resultado=$conexion->query($tabla);  
-
-    if($resultado){
-        header("Location: ../admin/pagina_eleccion_admin.php");
-        
-    }
-    else{
+    include('../php/contador.php');
+    if($output<=2){
         echo'
         <script>
-            alert("Usuario no almacenado, intente de nuevo");
-            window.location= "../admin/pagina_creacion.php";
+             alert("Solo pueden almacenarse 2 candidátos por el momento");
+            window.location= "../admin/pagina_eleccion_admin.php";
         </script>
-    ';
+        ';       
     }
+    else{
+        $matricula=$_POST['Matrícula'];
+        $nombre=$_POST['Nombre']; 
+        $imagen=addslashes(file_get_contents($_FILES['Imagen']['tmp_name']));
+        
+        $tabla= "INSERT INTO candidatos(nombre, imagen, matricula) VALUES('$nombre', '$imagen','$matricula')";
+    
+        $verificar_matricula= mysqli_query($conexion, "SELECT * FROM candidatos WHERE matricula='$matricula'");
+        verificar($verificar_matricula);
+    
+        $resultado=$conexion->query($tabla);  
+    
+        if($resultado){
+            header("Location: ../admin/pagina_eleccion_admin.php");
+            
+        }
+        else{
+            echo'
+            <script>
+                alert("Usuario no almacenado, intente de nuevo");
+                window.location= "../admin/pagina_creacion_admin.php";
+            </script>
+        ';
+        }  
+    }
+
 ?>

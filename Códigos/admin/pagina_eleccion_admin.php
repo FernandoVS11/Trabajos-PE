@@ -17,8 +17,11 @@
             <h1 class="form__h1">Votación pendiente ADMIN</h1>
         </div>
         <?php
-        include('../phpadmin/asignacion_admin.php');
-        ?>
+            include('../phpadmin/asignacion_admin.php');
+        ?>       
     </body>
-    <footer><a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a></footer>
+    <footer>
+    <a href="pagina_inicio_admin.php">Regresa a página inicio admin</a><br>
+    <a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a> 
+    </footer>
 </html>

@@ -29,5 +29,8 @@
         </center>
         </div>
     </body>
-    <footer><a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a></footer>
+    <footer>
+        <a href="pagina_inicio_admin.php">Regresa a página inicio admin</a><br>   
+        <a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a>
+    </footer>
 </html>

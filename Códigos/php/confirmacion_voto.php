@@ -1,5 +1,5 @@
 <?php
-    include('php/comprobacion_sesion.php');
+    include('comprobacion_sesion.php');
 ?>
 
 <!DOCTYPE html>
@@ -14,13 +14,18 @@
     </head>
     <body>
         <div class="form">
-            <h1 class="form__h1">Elija a su candidato</h1>
-			<?php 
-			include('php/asignacion_tabla.php');
-			?>	
-            <button id = "candidatoUno">Primer Candidato</button>
-            <p id = "votosUno">a</p>
-            <button id = "candidatoDos">Segundo Candidato</button><br>
+			<center>
+            <h1 class="form__h1">Confirme su voto</h1>
+            <?php include('asignacion_datos.php');?>
+            <h2>Seguro que quiere votar por el candidato <?php echo $row['id'];?>?</h2>
+			<form enctype="multipart/form-data">
+                <textarea type="text" readonly=""><?php echo $row['nombre']; ?></textarea><br/><br/>
+                <img height="200px" width="200px" src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']); ?>"/><br/><br/>
+                <textarea type="text" readonly=""><?php echo $row['matricula']; ?></textarea><br/><br/>
+            </form>
+            <button id = "candidatoUno">¡Vota!</button>
+            <p id = "votosUno"></p>
+			</center>
         </div>
 
         <script src= "https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
@@ -98,7 +103,7 @@
         </script>
     </body>
 	<footer>
-        <a href="pagina_inicio.php">Regresa a página inicio</a><br>   
-        <a class= "form_a" href="../php/cerrar_sesion.php">Cerrar Sesión</a>
+        <a href="../pagina_inicio.php">Regresa a página inicio</a><br>   
+        <a class= "form_a" href="cerrar_sesion.php">Cerrar Sesión</a>
     </footer>
 </html>
