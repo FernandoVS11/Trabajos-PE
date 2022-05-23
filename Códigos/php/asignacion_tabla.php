@@ -5,7 +5,7 @@
                     <th>Nombre</th>
                     <th>Matrícula</th>
                     <th>Imagen</th>
-                    <th>Voto</th>
+                    <th>Votos</th>
                 </thead>
                 <?php
                 include('conexion_be.php');
@@ -14,7 +14,7 @@
                 while($row=$resultado->fetch_assoc()){
             ?>
             <tr>
-                <td colspan="5"><center>Candidato <?php echo $row['id'];?></center></td>
+            <td colspan="5"><center>Candidato <?php echo $row['id'];?></center></td>
             </tr>
             <tr>
                 <td><?php echo $row['id']; ?></td>

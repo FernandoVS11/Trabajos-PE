@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <h1><center><img height="70px" src="https://user-images.githubusercontent.com/91033892/158305255-1f5c602c-6163-4e95-873c-bcfe35b6c151.png"/>The BlockChain Proyect</center></h1>
+        <h1><center><img height="70px" src="https://user-images.githubusercontent.com/91033892/158305255-1f5c602c-6163-4e95-873c-bcfe35b6c151.png"/><br>The BlockChain Proyect</center></h1>
    </header>
     <head>
         <meta charset="UTF-8">
