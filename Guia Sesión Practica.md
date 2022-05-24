@@ -28,11 +28,16 @@ y si quieres quitar esta marca
 
 y listo!
 Si tienes algún problema o quieres asegurarte de que esté bien instalado mírate este video:
+       
        Windows: https://www.youtube.com/watch?v=MtllDrDm4cM
 - XAMPP para MacOS
+
 Para este caso solo debes ir a https://www.apachefriends.org/es/index.html y descargar para OS X, al momento de instalarlo solo debes darle a next no es necesario que quites ninguna marca solo está si es que quieres
+
 ![MicrosoftTeams-image (2)](https://user-images.githubusercontent.com/97609743/170083349-839bbf86-08bc-468d-8b60-617c93c5d38a.png)
+
 Si sientes que no lo instalaste bien o prefieres verlo de un tutorial aquí te dejo uno:
+       
        MacOs: https://www.youtube.com/watch?v=hPrgo4fnFSg
 ## Xampp
 Una vez seguidas las instrucciones del teams podremos usar xampp para acceder a phpmyadmin, para esto tendrás que activar estos dos: 
