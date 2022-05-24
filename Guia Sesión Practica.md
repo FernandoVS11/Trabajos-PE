@@ -19,6 +19,11 @@ Y a partir de aqui tendremos que ingresar los datos que se le han provisto por m
 Una vez seguidas las instrucciones del teams podremos usar xampp para acceder a phpmyadmin, para esto tendrás que activar estos dos: 
 ![image](https://user-images.githubusercontent.com/97609743/169921654-4102a53b-88d0-4770-8d3e-b4ef616febbc.png)
 
+En xammp podrás cambiar tu port e incluso volverlo de manera remota, también podrás acceder a otros lenguajes y servers según desees.También podrás por ejemplo, al usar php, desde tu navegador de una manera local o remota, ver como se ve representado tu código.
+
+Para más detalle checate estge video:
+https://www.youtube.com/watch?v=p8Ozqop6O3s
+
 ## PhpMyAdmin
 Con lo anterior debería ser suficiente para conecctarse con su base de datos local y crear lo que pide el ejercicio, pero algo que igual permite el xampp es acceder a phpmyadmin donde podrán de igual manera usar sql y realizar los comandos que les vamos a enseñar en clase.
 
