@@ -104,9 +104,9 @@ En esta ocasion ingresaremos nuestro nombre, en esta ocasion bien escrito, enton
 
 ```MySQL
 use login_db;
-INSERT INTO lista_alumnos('nombre') VALUES ('Nombre completo');
+INSERT INTO lista_alumnos(nombre, nlist) VALUES ('Nombre completo','Tú número lista');
 ```
-**Aqui reemplazaremos "Nombre completo" por nuestro nombre**.
+**Aqui reemplazaremos "Nombre completo" por nuestro nombre y Tú numero lista con tu número de lista**.
 
 Aqui seguimos trabajando en la base de datos login_db, donde insertamos una fila en la tabla 'lista_alumnos' con nuestro nombre. Cuando ya hayamos puesto nuestro nombre completo ejecutamos el codigo como antes, dando click derecho y luego click en "Run MySQL query"
 
