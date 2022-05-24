@@ -30,4 +30,3 @@ Registro que llevaba a cabo el scrum master de las videollamadas y reuniones que
 ## Prettier
 Para automatizar el estándar de codificación utilizamos una extensión de Visual Studio Code llamada Prettier
 
-##
