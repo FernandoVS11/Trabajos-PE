@@ -19,8 +19,11 @@ Y a partir de aqui tendremos que ingresar los datos que se le han provisto por m
 - XAMPP para Windows
 Debes ir a esta página https://www.apachefriends.org/es/index.html y descargarlo para windows.
 Al momento de instalarlo deberás marcar estas opciones:
+
 ![MicrosoftTeams-image](https://user-images.githubusercontent.com/97609743/170083240-beed176a-77eb-4438-9db8-bae9c3574500.png)
+
 y si quieres quitar esta marca 
+
 ![MicrosoftTeams-image (1)](https://user-images.githubusercontent.com/97609743/170083279-31018fa9-29e0-4d7a-9c57-5dba9a5d3daf.png)
 
 y listo!
