@@ -11,6 +11,27 @@
     <body>
         <div class="form">
             <h1 class="form__h1">La eleccion aún está sin iniciar vuelva después de un tiempo</h1>
+            <h2>Resultado de las elecciones previas</h2>
+            <center>
+            <table border="2">
+                <thead>
+                    <th>N°</th>
+                    <th>Nombres</th>
+                    <th>votos</th>
+                </thead>
+            <?php
+                include('php/conexion_be.php');
+                $query="SELECT * FROM resultado";
+                $resultado= mysqli_query($conexion,$query);
+                while($row=mysqli_fetch_assoc($resultado)){?>
+            <tr>
+                <td><?php echo $row['id']; ?></td>
+                <td><?php echo $row['ganador']; ?></td>
+                <td><?php echo $row['votos']; ?></td>
+            </tr>
+            <?php }mysqli_free_result($resultado); ?>
+            </table>
+            </center>
         </div>
     </body>
 	<footer>

@@ -24,9 +24,6 @@
 				header("Location: pagina_eleccion_finalizada.php");
 			}
 			?>	
-            <button id = "candidatoUno">Primer Candidato</button>
-            <p id = "votosUno"></p>
-            <button id = "candidatoDos">Segundo Candidato</button><br>
         </div>
 
         <script src= "https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>

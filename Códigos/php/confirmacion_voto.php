@@ -18,13 +18,16 @@
             <h1 class="form__h1">Confirme su voto</h1>
             <?php include('asignacion_datos.php');?>
             <h2>Seguro que quiere votar por el candidato <?php echo $row['id'];?>?</h2>
-			<form enctype="multipart/form-data">
+			<form action="registro_votos.php" method="POST" enctype="multipart/form-data">
                 <textarea type="text" readonly=""><?php echo $row['nombre']; ?></textarea><br/><br/>
                 <img height="200px" width="200px" src="data:image/jpg;base64, <?php echo base64_encode($row['imagen']); ?>"/><br/><br/>
                 <textarea type="text" readonly=""><?php echo $row['matricula']; ?></textarea><br/><br/>
+				<p>Escriba su matrícula para confimar su voto</p>
+				<input type="text" placeholder="Matrícula" required="" name="Matrícula">
+				<p>Escribe el número del cándidato por el que vota</p>
+				<input type="text" placeholder="Número" required="" name="id">
+				<button id= "votosUno">¡Vota!</button>
             </form>
-            <button id = "candidatoUno">¡Vota!</button>
-            <p id = "votosUno"></p>
 			</center>
         </div>
 

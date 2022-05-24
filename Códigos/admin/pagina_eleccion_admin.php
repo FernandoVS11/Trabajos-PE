@@ -19,7 +19,7 @@
         <?php
         include('../phpadmin/asignacion_admin.php');
         ?>      
-        <a href="../php/finalizar_eleccion.php"><center>Finalizar eleccion</center> </a> 
+        <a href="confirmacion_finalizar.php"><center>Finalizar eleccion</center> </a> 
     </body>
     <footer>
     <a href="pagina_inicio_admin.php">Regresa a página inicio admin</a><br>
