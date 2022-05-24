@@ -15,6 +15,22 @@ Antes de empezar tenemos que conectarnos a un servidor, para ello tendremos que 
  <img width="265" alt="Screen Shot 2022-05-18 at 14 39 49" src="https://user-images.githubusercontent.com/89323622/169142452-9e1e931e-c5ca-4bf8-a8c4-f832b882a806.png">
 
 Y a partir de aqui tendremos que ingresar los datos que se le han provisto por medio del chat de Teams.
+## Descarga Xampp
+- XAMPP para Windows
+Debes ir a esta página https://www.apachefriends.org/es/index.html y descargarlo para windows.
+Al momento de instalarlo deberás marcar estas opciones:
+![MicrosoftTeams-image](https://user-images.githubusercontent.com/97609743/170083240-beed176a-77eb-4438-9db8-bae9c3574500.png)
+y si quieres quitar esta marca 
+![MicrosoftTeams-image (1)](https://user-images.githubusercontent.com/97609743/170083279-31018fa9-29e0-4d7a-9c57-5dba9a5d3daf.png)
+
+y listo!
+Si tienes algún problema o quieres asegurarte de que esté bien instalado mírate este video:
+       Windows: https://www.youtube.com/watch?v=MtllDrDm4cM
+- XAMPP para MacOS
+Para este caso solo debes ir a https://www.apachefriends.org/es/index.html y descargar para OS X, al momento de instalarlo solo debes darle a next no es necesario que quites ninguna marca solo está si es que quieres
+![MicrosoftTeams-image (2)](https://user-images.githubusercontent.com/97609743/170083349-839bbf86-08bc-468d-8b60-617c93c5d38a.png)
+Si sientes que no lo instalaste bien o prefieres verlo de un tutorial aquí te dejo uno:
+       MacOs: https://www.youtube.com/watch?v=hPrgo4fnFSg
 ## Xampp
 Una vez seguidas las instrucciones del teams podremos usar xampp para acceder a phpmyadmin, para esto tendrás que activar estos dos: 
 ![image](https://user-images.githubusercontent.com/97609743/169921654-4102a53b-88d0-4770-8d3e-b4ef616febbc.png)
