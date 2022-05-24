@@ -103,7 +103,7 @@ Posterior a eso en la siguiente linea escribiremos "SELECT * FROM lista_alumnos;
 
 El resultado debería ser algo asi:
 ```MySQL
- use login_db;
+ use mi_base_de_datos;
  SELECT * FROM lista_alumnos;
 ```
 
@@ -116,7 +116,7 @@ Creamos un nuevo query como la vez pasada, haciendo click derecho y click en "Ne
 Seguiremos en la misma base de datos y vamos a trabajar en la misma tabla. Como se pudo ver la tabla es una lista del salon, sin embargo, la lista del salon esta mal, entonces tendremos que borrar la fila donde esta nuestro nombre, para eso escribimos:
 
 ```MySQL
-use login_db;
+use mi_base_de_datos;
 DELETE FROM lista_alumnos WHERE id='';
 ```
 En la parte que dice " id='' ", entre las comillas simples pondremos el id de la fila donde se encuentra nuestro nombre mal escrito. Una vez ponemos el id ejecutamos el codigo como la vez pasada, haciendo click derecho y luego click en "Run MySQL query".
@@ -128,7 +128,7 @@ Creamos un nuevo query como la vez pasada, haciendo click derecho y click en "Ne
 En esta ocasion ingresaremos nuestro nombre, en esta ocasion bien escrito, entonces en este nuevo query escribimos:
 
 ```MySQL
-use login_db;
+use mi_base_de_datos;
 INSERT INTO lista_alumnos(nombre, nlist) VALUES ('Nombre completo','Tú número lista');
 ```
 **Aqui reemplazaremos "Nombre completo" por nuestro nombre y Tú numero lista con tu número de lista**.
@@ -160,28 +160,28 @@ Aqui estamos trabajando en la base de datos login_db, especificamente en la tabl
 ## Crear una fila (Create)
 
 ```MySQL
-use login_db;
-INSERT INTO lista_alumnos('nombre') VALUES ('(el nombre que quieras poner)');
+use mi_base_de_datos;
+INSERT INTO lista_alumnos(nombre,nlista) VALUES ('el nombre que quieras poner','el número de lista');
 ```
 
 ## Visualizar la tabla (Read)
 
 ```MySQL
- use login_db;
+ use mi_base_de_datos;
  SELECT * FROM lista_alumnos;
 ```
 
 ## Actualizar una tabla (Update)
 
 ```MySQL
-use login_db;
+use mi_base_de_datos;
 UPDATE lista_alumnos SET nlista='(el número que quieras poner)' WHERE id='(el id que hay en la fila que quieres modificar)';
 ```
 
 ## Eliminar una fila (Delete)
 
 ```MySQL
-use login_db;
+use mi_base_de_datos;
 DELETE FROM lista_alumnos WHERE id='(el id de la fila que quieras eliminar)';
 ```
 
